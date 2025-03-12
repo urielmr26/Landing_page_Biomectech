@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biomectech - Tecnología Médica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="CSS/normalize.css" rel="preload">
+  <link href="CSS/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+  <link href="CSS/CSS.css" rel="preload">
+  <link href="CSS/CSS.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <img src="CSS/IMG/BIOMECTECH_logo_iso%20(2).png">
+    <a class="navbar-brand" href="#">BIOMECTECH</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sección Inicio con Carrusel -->
+<section id="carrucel" class="position-relative">
+  <!-- Carrusel Bootstrap -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Contenido del Carrusel -->
+    <div class="carousel-inner">
+      <!-- Item 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-background" style="background-image: url('CSS/IMG/medica10.jpg');"></div>
+        <div class="carousel-caption">
+          <h3>Innovación en equipos médicos</h3>
+          <p>La más alta tecnología para diagnóstico preciso</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="carousel-item">
+        <div class="carousel-background" style="background-image: url('CSS/IMG/medica7.jpg');"></div>
+        <div class="carousel-caption">
+          <h3>Mantenimiento especializado</h3>
+          <p>Servicio técnico certificado</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="carousel-item">
+        <div class="carousel-background" style="background-image: url('CSS/IMG/medica8.jpeg');"></div>
+        <div class="carousel-caption">
+          <h3>Capacitación continua</h3>
+          <p>Entrenamiento para profesionales de la salud</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+<!-- Sección Inicio -->
+<section id="inicio" class="jumbotron">
+  <div class="container text-center">
+    <h1 class="section-title">¡Conócenos!</h1>
+    <p class="lead"><strong>Somos una empresa con más de 30 años de experiencia en el Sector Salud, compuesta por
+      un equipo interdisciplinario dedicados a ofrecerlas soluciones mas eficientes en el mercado.
+    </strong></p>
+  </div>
+</section>
+    <!-- Sección Productos -->
+    <section id="productos" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center">Productos</h2>
+        <p>Nuestros productos están diseñados para satisfacer las más altas exigencias...</p>
+      </div>
+    </section>
+
+<!-- Sección Servicios -->
+<section id="servicios" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Servicios</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Mantenimiento de equipo médico</li>
+      <li class="list-group-item">Instalación de equipo</li>
+      <li class="list-group-item">Capacitaciones</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Sección Promociones -->
+<section id="promociones" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Promociones</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="promo-card">
+          <h4>Paquete de instrumentos</h4>
+          <p class="text-danger"><del>$5,988</del> $4,320</p>
+        </div>
+      </div>
+      <!-- Repetir para otras promociones -->
+    </div>
+  </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Contacto</h2>
+    <form id="contactForm">
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Correo electrónico" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Smooth scroll para el navbar
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  // Inicializar carrusel con intervalo
+  const myCarousel = new bootstrap.Carousel('#heroCarousel', {
+    interval: 5000,
+    wrap: true,
+    pause: false
+  })
+</script>
+
+<a href="https://wa.me/+525580315284" class="whatsapp-btn" target="_blank"
+   aria-label="Contactar por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+  </div>
+
+</body>
+
+</html>

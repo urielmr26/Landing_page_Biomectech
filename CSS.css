@@ -1,0 +1,174 @@
+:root {
+    --background-color: #005792;
+    --background: #f8f9fa;
+    --color: #005792;
+    --border: #ddd;
+
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar {
+    background-color: #005792;
+}
+.jumbotron {
+    background: #f8f9fa;
+    padding: 4rem;
+}
+.section-title {
+    color: #005792;
+    margin-bottom: 2rem;
+}
+.promo-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10 px */
+    font-family: Krub, sans-serif;
+    /* Degradado */
+}
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Titulos */
+.titulo span {
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cont {
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+
+/* Estilo del botón de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+.whatsapp-btn i {
+    font-size: 32px;
+}
+
+img {
+    max-width: 6%;
+}
+
+#inicio {
+    height: 100vh;
+    min-height: 650px;
+}
+
+
+
+.carousel {
+    height: 100vh;
+}
+
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: 1;
+    image-rendering: optimizeQuality;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 8px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 70vh;
+    }
+
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
